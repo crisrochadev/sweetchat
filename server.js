@@ -9,7 +9,7 @@ const cors = require("cors");
 app.use(cors())
 const io = require("socket.io")(http, {
   cors: {
-    origin: "http://localhost:9200",
+    origin: process.env.FRONT_URL,
     methods: ["GET", "POST"]
   },
   transports: ['websocket'] // Adicione esta linha para permitir o transporte WebSocket
