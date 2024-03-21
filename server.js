@@ -7,12 +7,7 @@ const knex = require("./connection/index");
 const cors = require("cors");
 
 app.use(cors())
-const io = require("socket.io")(http, {
-  cors: {
-    origin: "http://localhost:9200",
-    methods: ["GET", "POST"]
-  }
-});
+const io = require("socket.io")(http);
 
 
 app.use(express.json());
