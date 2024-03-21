@@ -1,5 +1,4 @@
 require('dotenv').config()
-
 const express = require("express");
 const app = express();
 const http = require("http").createServer(app);
@@ -36,7 +35,8 @@ app.get("/rooms", async (req, res) => {
   } catch (error) {
     res.status(500).json({
       success: false,
-      message: "Erro interno do servidor"
+      message: "Erro interno do servidor",
+      error
     });
   }
 });
