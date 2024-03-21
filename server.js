@@ -15,12 +15,6 @@ const io = require("socket.io")(http, {
   transports: ['websocket'] // Adicione esta linha para permitir o transporte WebSocket
 });
 
-io.origins((origin, callback) => {
-  if (origin !== 'https://foo.example.com') {
-      return callback('origin not allowed', false);
-  }
-  callback(null, true);
-});
 
 app.use(express.json());
 app.get("/rooms", async (req, res) => {
