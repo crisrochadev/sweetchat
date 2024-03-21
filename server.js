@@ -6,7 +6,7 @@ const knex = require("./connection/index");
 // const moment = require("moment/moment");
 const cors = require("cors");
 
-// app.use(cors())
+app.use(cors())
 const io = require("socket.io")(http, {
   cors: {
     origin: "http://localhost:9200",
