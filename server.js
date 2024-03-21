@@ -35,7 +35,7 @@ app.get("/rooms", async (req, res) => {
   } catch (error) {
     res.status(500).json({
       success: false,
-      message: "Erro interno do servidor",
+      message: "Erro interno do servidor railway",
       error
     });
   }
