@@ -222,7 +222,7 @@ io.on("connection", (socket) => {
   });
 });
 
-const PORT = process.env.PORT_SERVER || 8232;
+const PORT = process.env.PORT || 8232;
 http.listen(PORT, () => {
   console.log(`listening on *:${PORT}`);
 });

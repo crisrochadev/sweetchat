@@ -12,7 +12,7 @@ module.exports = {
       user:process.env.USER_DEV,
       password:process.env.PASSWORD_DEV,
       host:process.env.HOST_DEV,
-      port:process.env.PORT_DEV,
+      port:process.env.PORT_DB_DEV,
       database:process.env.DATABASE_DEV
     },
     allowNull:true
@@ -26,7 +26,7 @@ module.exports = {
       user:process.env.USER,
       password:process.env.PASSWORD,
       host:process.env.HOST,
-      port:process.env.PORT,
+      port:process.env.PORT_DB,
       database:process.env.DATABASE
     },
     allowNull:true
